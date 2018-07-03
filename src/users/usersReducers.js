@@ -13,8 +13,7 @@ import { NULL_ARRAY } from '../nullObjects';
 
 const initialState: UsersState = NULL_ARRAY;
 
-const realmInit = (state: UsersState, action: RealmInitAction): UsersState =>
-  action.data.realm_users;
+const realmInit = (state: UsersState, action: RealmInitAction): UsersState => action.data.realm_users;
 
 const eventUserAdd = (state: UsersState, action: EventUserAddAction): UsersState => [
   ...state,
